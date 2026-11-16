@@ -1,0 +1,32 @@
+{
+  "_source": "Bloomberg YAS, RRRA and FWCM (curve I22, GBP United Kingdom Sovereign), close 14 Aug 2026. Quoted levels only, typed from the terminal; every derived number is computed in code.",
+  "trade_date": "2026-08-14",
+  "settle": "2026-08-17",
+  "short_leg": {"name": "UKT 4 3/4 22-Oct-2035", "isin": "GB00BTXS1K06", "coupon": 4.75, "maturity": "2035-10-22",
+                "yield": 5.019935, "outstanding_gbp": 41812497000,
+                "yas": {"clean": 98.027, "dirty": 99.54544, "accrued": 1.51844, "mod_duration": 7.232015,
+                        "dv01": 7.199142, "convexity": 0.636083}},
+  "long_leg":  {"name": "UKT 5 3/8 31-Jan-2056", "isin": "GB00BT7J0241", "coupon": 5.375, "maturity": "2056-01-31",
+                "yield": 5.76976, "outstanding_gbp": 5904250000,
+                "yas": {"clean": 94.436, "dirty": 94.6843, "accrued": 0.2483, "mod_duration": 14.247407,
+                        "dv01": 13.490058, "convexity": 3.088837}},
+  "repo": 0.037308,
+  "horizon_days": 91,
+  "rolldown_bp": {"short_leg": 1.6, "long_leg": 0.04},
+  "forward_spread_3m_bp": 62.45,
+  "spread_3m_sd_bp": 13.3,
+  "ten_year_mean_bp": 50.2,
+  "ten_year_max_bp": 89.3,
+  "stop_bp": 20.0,
+  "scenarios": [
+    {"name": "Bull - partial reversion", "target_bp": 60.0, "prob": 0.30},
+    {"name": "Base - forward realised", "target_bp": 62.45, "prob": 0.35},
+    {"name": "Bear - stop", "target_bp": 94.98, "prob": 0.35}
+  ],
+  "nav_gbp_m": 100.0,
+  "risk_budget": 0.005,
+  "cross_checks": {
+    "sonia_swap_10y": 4.6092, "sonia_swap_30y": 5.04424,
+    "breakeven_10y": 3.272, "breakeven_30y": 3.28
+  }
+}
